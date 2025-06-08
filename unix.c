@@ -168,7 +168,7 @@
 #include <poll.h>
 #endif
 
-#if !defined(HAS_SOCKLEN_T) && !defined(__socklen_t_defined) && !defined(__HAIKU__)
+#if !defined(HAS_SOCKLEN_T) && !defined(__socklen_t_defined) && !defined(__HAIKU__) && !defined(__EMSCRIPTEN__)
 typedef int socklen_t;
 #endif
 
